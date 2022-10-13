@@ -1,0 +1,191 @@
+:root {
+    --shadow: 0 3px 25px #e0e0e0;
+    --menu-shadow: #00000047;
+    --main-gradient: linear-gradient(315deg, #ff8585, #7664ff);
+    --text-color: #525252;
+}
+
+.gc-account-leftbar {
+    margin: 0;
+    padding: 0;
+    background: #595959 !important;
+    width: 125px !important;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0 0 40px var(--menu-shadow);
+    z-index: 10002;
+}
+
+.gc-account-leftbar .gc-account-user-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gc-account-leftbar .gc-account-user-menu li {
+    padding: 0;
+    margin: 15px 0 0 0;
+    width: 55px !important;
+    height: 55px !important;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #414141;
+}
+
+.gc-account-leftbar .gc-account-user-menu li a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background: #fff0 !important;
+    display: flex !important;
+    text-decoration: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gc-main-content.with-left-menu {
+    margin-left: 125px !important;
+}
+
+/*MENU*/
+.gc-account-leftbar .gc-account-user-menu li:not(:nth-child(1)) a img {
+    display: none;
+}
+
+li.menu-item.menu-item-profile {
+    margin-bottom: 20px;
+    width: 90px !important;
+    height: 90px !important;
+}
+
+li.menu-item.menu-item-profile img {
+    width: 90px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.gc-account-leftbar .notify-count {
+    position: absolute;
+    background: #fff0;
+    padding: 0 !important;
+    width: 25px;
+    bottom: 20px !important;
+    right: -30px !important;
+    border-radius: 0 !important;
+    color: #fff;
+    font-size: 18px !important;
+    font-weight: 400;
+}
+
+li.menu-item.menu-item-notifications_button_small a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/223/h/064771c33f7c47aa240f20c6c5cb4aeb.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-cms a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/160/h/732201edd45f85f16b962ba7e539e88c.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-teach a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/138/h/aa801d17c00326a786e804d21bd8c7f9.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-user a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/456/h/395332d4a218287660d2e1d019a493b1.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-tasks a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/206/h/dc2e9a93d36fa86e125901d9a298d6c3.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-notifications a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/207/h/61e4b3ffb67cf1e7646a3405c3986a9e.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-sales a {
+    background: center/50% url(https://fs.getcourse.ru/fileservice/file/download/a/195777/sc/147/h/eee8fc5340b1a18451768f73c4c84e00.png) no-repeat !important;
+}
+
+li.menu-item.menu-item-chatium {
+    display: none;
+}
+
+.gc-account-leftbar .gc-account-user-menu li:hover {
+    background: #454545 !important;
+}
+
+.gc-account-leftbar .gc-account-user-submenu-bar {
+    position: absolute;
+    top: 0;
+    left: 125px !important;
+    width: 160px;
+    height: 100%;
+    font-size: 12px;
+    background: #F0F0F0;
+    border-radius: 0 20px 20px 0;
+}
+
+.gc-account-user-submenu-bar .gc-account-user-submenu li .notify-count {
+    display: none;
+}
+
+/*LESSONS*/
+.stream-table {
+    margin-right: auto !important;
+    max-width: 850px;
+}
+
+.stream-table tbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.stream-table tbody tr {
+    margin: 25px 5px 25px 5px;
+    padding: 4% 2%;
+    width: 310px;
+    height: 210px;
+    float: left;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    overflow: visible;
+}
+
+.stream-table tbody tr a {
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.stream-table tbody tr td {
+    padding: 0;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+.stream-table tbody tr td:hover {
+    background: #fff0 !important;
+}
+
+.stream-table .stream-title {
+    padding-right: 30px;
+    line-height: 1.2;
+    font-size: 18px !important;
+    color: var(--text-color);
+}
